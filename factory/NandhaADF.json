@@ -1,0 +1,9 @@
+{
+	"name": "NandhaADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "93afc737-a3d2-44ac-b413-435eef740e36",
+		"tenantId": "ce35e033-a3d6-4d35-aed2-117cf87a7344"
+	}
+}
