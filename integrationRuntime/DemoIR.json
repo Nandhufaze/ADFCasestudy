@@ -1,0 +1,6 @@
+{
+	"name": "DemoIR",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

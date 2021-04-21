@@ -2,29 +2,25 @@
 	"name": "Excel1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "FileServer1",
+			"referenceName": "OnpremiseLS",
 			"type": "LinkedServiceReference"
-		},
-		"parameters": {
-			"SheetName": {
-				"type": "string",
-				"defaultValue": "Sheet1"
-			}
 		},
 		"annotations": [],
 		"type": "Excel",
 		"typeProperties": {
-			"sheetName": {
-				"value": "@dataset().SheetName",
-				"type": "Expression"
-			},
+			"sheetName": "Sheet1",
 			"location": {
 				"type": "FileServerLocation",
 				"fileName": "SupplyQualityAnalysis.xlsx"
 			},
 			"firstRowAsHeader": true
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "SheetName",
+				"type": "String"
+			}
+		]
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }
