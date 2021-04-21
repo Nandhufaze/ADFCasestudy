@@ -72,7 +72,7 @@
 								"sink": {
 									"type": "AzureSqlSink",
 									"preCopyScript": {
-										"value": "truncate table @{item().SheetName}",
+										"value": "truncate table @item().SheetName",
 										"type": "Expression"
 									},
 									"tableOption": "autoCreate",
